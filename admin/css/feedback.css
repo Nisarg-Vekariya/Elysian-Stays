@@ -1,0 +1,227 @@
+:root {
+    --hotel-primary: #ad8b3a;
+    --hotel-secondary: #45443F;
+    --hotel-dark: #000;
+    --hotel-light: #fff;
+}
+
+.hotel-content-wrapper {
+    margin-left: 0;
+    /* Adjust this if you have a sidebar */
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+.hotel-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.hotel-card-header {
+    background-color: var(--hotel-primary);
+    color: var(--hotel-light);
+    padding: 15px 20px;
+    border-bottom: none;
+}
+
+.hotel-card-body {
+    padding: 30px;
+}
+
+.hotel-btn-primary {
+    background-color: var(--hotel-primary);
+    border-color: var(--hotel-primary);
+    color: var(--hotel-light);
+}
+
+.hotel-btn-primary:hover,
+.hotel-btn-primary:focus {
+    background-color: #8f7430;
+    border-color: #8f7430;
+    color: var(--hotel-light);
+}
+
+.hotel-btn-secondary {
+    background-color: var(--hotel-secondary);
+    border-color: var(--hotel-secondary);
+    color: var(--hotel-light);
+}
+
+.hotel-btn-secondary:hover,
+.hotel-btn-secondary:focus {
+    background-color: #333230;
+    border-color: #333230;
+    color: var(--hotel-light);
+}
+
+.hotel-input:focus {
+    border-color: var(--hotel-primary);
+    box-shadow: 0 0 0 0.25rem rgba(173, 139, 58, 0.25);
+}
+
+.hotel-feedback-table {
+    background-color: var(--hotel-light);
+    width: 100%;
+}
+
+.hotel-table-header {
+    /* background-color: var(--hotel-secondary); */
+    color: #000;
+}
+
+.hotel-table-striped tbody tr:nth-child(even) {
+    background-color: rgba(173, 139, 58, 0.05);
+}
+
+.hotel-feedback-table tbody tr:hover {
+    background-color: rgba(173, 139, 58, 0.1);
+}
+
+.hotel-badge-primary {
+    background-color: var(--hotel-primary);
+    color: var(--hotel-light);
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    border-radius: 0.25rem;
+}
+
+.hotel-feedback-actions .hotel-btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    margin-right: 5px;
+}
+
+.hotel-search-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hotel-search-box .hotel-input {
+    padding-left: 40px;
+    border-radius: 30px;
+}
+
+.hotel-search-box i {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: var(--hotel-secondary);
+}
+
+.hotel-pagination .page-item.active .page-link {
+    background-color: var(--hotel-primary);
+    border-color: var(--hotel-primary);
+}
+
+.hotel-pagination .page-link {
+    color: var(--hotel-primary);
+}
+
+.hotel-date-range {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.hotel-date-range .hotel-input {
+    max-width: 150px;
+}
+
+/* Animation classes */
+.hotel-fade-in {
+    animation: fadeIn 0.5s;
+}
+
+.hotel-slide-up {
+    animation: slideInUp 0.5s;
+}
+
+/* Custom Checkboxes */
+.hotel-form-check-input:checked {
+    background-color: var(--hotel-primary);
+    border-color: var(--hotel-primary);
+}
+
+.hotel-modal-header {
+    background-color: var(--hotel-primary);
+    color: white;
+}
+
+.hotel-form-label {
+    font-weight: 500;
+    color: var(--hotel-secondary);
+}
+
+.hotel-table-responsive {
+    overflow-x: auto;
+}
+
+.hotel-danger-header {
+    background-color: #dc3545;
+    color: white;
+}
+
+.hotel-danger-btn {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+.hotel-danger-btn:hover,
+.hotel-danger-btn:focus {
+    background-color: #bb2d3b;
+    border-color: #bb2d3b;
+}
+
+.hotel-title {
+    font-weight: bold;
+    color: var(--hotel-secondary);
+}
+
+.hotel-subtitle {
+    color: #6c757d;
+}
+
+.hotel-action-btn-primary {
+    color: var(--hotel-primary);
+    background-color: transparent;
+    border: 1px solid var(--hotel-primary);
+}
+
+.hotel-action-btn-primary:hover {
+    background-color: var(--hotel-primary);
+    color: white;
+}
+
+.hotel-action-btn-secondary {
+    color: var(--hotel-secondary);
+    background-color: transparent;
+    border: 1px solid var(--hotel-secondary);
+}
+
+.hotel-action-btn-secondary:hover {
+    background-color: var(--hotel-secondary);
+    color: white;
+}
+
+.hotel-action-btn-danger {
+    color: #dc3545;
+    background-color: transparent;
+    border: 1px solid #dc3545;
+}
+
+.hotel-action-btn-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.hotel-icon-light {
+    color: white;
+}
+
+.hotel-dropdown .dropdown-item:hover {
+    background-color: rgba(173, 139, 58, 0.1);
+}

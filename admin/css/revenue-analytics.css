@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #ad8b3a;
+    --secondary-color: #45443F;
+    --accent-light: #ffffff;
+    --accent-dark: #000000;
+    --bg-light: #f7f7f7;
+    --card-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    --transition-speed: 0.3s;
+}
+
+.revenue-analytics .card {
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 30px;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    overflow: hidden;
+}
+
+.revenue-analytics .card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.revenue-analytics .card-header {
+    background-color: var(--primary-color);
+    color: var(--accent-light);
+    border-bottom: none;
+    padding: 1rem;
+}
+
+.revenue-analytics .card-header h5 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.revenue-analytics .card-body {
+    padding: 1.5rem;
+}
+
+.revenue-analytics .revenue-card {
+    background-color: var(--accent-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    height: 100%;
+}
+
+.revenue-analytics .revenue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.revenue-analytics .revenue-card h4 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.revenue-analytics .revenue-value {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.revenue-analytics .revenue-description {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.revenue-analytics .revenue-change {
+    font-size: 0.9rem;
+    color: #28a745;
+}
+
+.revenue-analytics .hotel-revenue-card {
+    background-color: var(--accent-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    margin-top: 20px;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    height: 100%;
+}
+
+.revenue-analytics .hotel-revenue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.revenue-analytics .hotel-revenue-card h5 {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.revenue-analytics .hotel-revenue-value {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .revenue-analytics .revenue-card,
+    .revenue-analytics .hotel-revenue-card {
+        margin-bottom: 1rem;
+    }
+}

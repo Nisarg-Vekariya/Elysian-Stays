@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        body {
+            font-family: 'Inter', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            position: relative;
+            /* background-image: url('../Images/RambaghPalace.webp'); */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Cinzel', serif;
+        }
+        #herocontact{
+            background-image: url('../Images/RambaghPalace.webp');
+
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: -20px;
+        }
+
+        .search-bar {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+        }
+
+        .search-bar input {
+            width: calc(100% - 50px);
+            padding: 15px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            padding: 15px 20px;
+            border: none;
+            background-color: #fff;
+            color: #000;
+            border-radius: 0 50px 50px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-section {
+            padding: 50px 20px;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Cinzel', serif;
+            font-size: 36px;
+        }
+
+        .h2mod {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Cinzel', serif;
+            font-size: 36px;
+        }
+
+        .contact-table {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .divider {
+            width: 80px;
+            height: 3px;
+            background-color: #000;
+            margin: 10px auto 30px;
+        }
+
+        .lightdivider {
+            width: 100px;
+            height: 2px;
+            background-color: #000;
+            margin: 5px auto 15px;
+        }
+
+        .lightdark {
+            padding: 1%;
+            background-color: #f6f5f5;
+        }
+
+        .contact-card {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .contact-details p {
+            margin-bottom: 5px;
+        }
+
+        .contact-details a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        .text-p {
+            color: #45443F;
+        }
+
+        .form-context {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .button-outline {
+            background-color: transparent;
+            color: #ad8b3a;
+            border: 2px solid #ad8b3a;
+            position: relative;
+        }
+
+        .button-outline:hover {
+            background-color: #ad8b3a;
+            color: black;
+            box-shadow: 0px 4px 10px rgba(173, 139, 58, 0.4);
+            transform: translateY(-6px);
+            background: linear-gradient(145deg, #ad8b3a, #d0a95c);
+            transition: all 0.3s ease-out;
+        }
+
+        .ahef a {
+            color: #a7894e;
+            text-decoration: none;
+        }
+
+        .ahef a:hover {
+            text-decoration: underline;
+        }
+
+        textarea:focus,
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="datetime"]:focus,
+        input[type="datetime-local"]:focus,
+        input[type="date"]:focus,
+        input[type="month"]:focus,
+        input[type="time"]:focus,
+        input[type="week"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="color"]:focus,
+        .uneditable-input:focus {
+            border-color: rgba(173, 139, 58, 0.8);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(173, 139, 58, 0.6);
+            outline: 0 none;
+        }
+
+        /* Hotel Autocomplete Styling */
+        .ui-autocomplete {
+            max-height: 200px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border-radius: 8px;
+            border: 1px solid #ced4da;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 9999 !important;
+            padding: 5px 0;
+        }
+
+        .ui-menu-item {
+            padding: 8px 12px;
+            transition: all 0.2s ease;
+        }
+
+        .ui-menu-item:hover,
+        .ui-menu-item .ui-state-active {
+            background-color: rgba(173, 139, 58, 0.1) !important;
+            border-color: rgba(173, 139, 58, 0.2) !important;
+            color: #ad8b3a !important;
+            border-radius: 4px;
+        }
+
+        .ui-menu-item .ui-state-active {
+            font-weight: bold;
+        }
+
+        .ui-menu .ui-menu-item-wrapper.ui-state-active {
+            background-color: rgba(173, 139, 58, 0.1) !important;
+            border-color: transparent !important;
+            color: #ad8b3a !important;
+        }

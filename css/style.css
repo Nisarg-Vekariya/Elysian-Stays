@@ -1,0 +1,68 @@
+/* 
+        .aircover-section {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .aircover-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .aircover-header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .aircover-header p {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .feature-table {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .feature-table .row {
+            padding: 20px;
+            align-items: center;
+        }
+
+        .feature-table .row:not(:last-child) {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .feature-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .feature-description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .check-mark {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .cross-mark {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .header-row {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            text-align: center;
+        } */

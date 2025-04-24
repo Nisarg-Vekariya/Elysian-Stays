@@ -1,0 +1,73 @@
+
+.manage-users__card {
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.manage-users__btn-theme {
+    background-color: #ad8b3a;
+    color: white;
+}
+
+.manage-users__btn-theme:hover {
+    background-color: #45443F;
+    color: #ad8b3a;
+}
+
+.manage-users tbody tr {
+    animation: fadeIn 0.5s ease-in-out;
+    transition: background-color 0.3s ease;
+}
+
+.manage-users tbody tr:nth-child(even) {
+    background-color: rgba(173, 139, 58, 0.05);
+}
+
+.manage-users tbody tr:hover {
+    background-color: rgba(173, 139, 58, 0.1);
+}
+
+.manage-users__fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.manage-users__modal {
+    z-index: 1050;
+}
+
+.manage-users__modal-backdrop {
+    z-index: 1049;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .manage-users__table {
+        font-size: 0.9rem;
+    }
+
+    .manage-users__table th,
+    .manage-users__table td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .manage-users__table-responsive {
+        overflow-x: auto;
+    }
+}
+
+.modal-header {
+    background-color: #ad8b3a;;
+    color: #ffffff;
+    border-bottom: none;
+}

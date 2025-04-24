@@ -1,0 +1,143 @@
+/* Footer Styles */
+        .footer {
+            background-color: black;
+            color: #fff;
+            padding: 40px 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .footer h3 {
+            color: #45443F;
+            margin-bottom: 15px;
+        }
+
+        .footer-about,
+        .footer-links,
+        .footer-contact,
+        .footer-subscribe {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin: 8px 0;
+        }
+
+        .footer-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links ul li a:hover {
+            color: #ad8b3a;
+        }
+
+        .footer-contact p {
+            margin: 8px 0;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-icons a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-icons a:link {
+            text-decoration: none;
+        }
+
+        .social-icons i {
+            width: 24px;
+            height: 24px;
+            font-size: 24px;
+            /* Set the size of the icons */
+            transition: transform 0.3s;
+        }
+
+        /* Hover effect for scaling icons */
+        .social-icons a:hover i {
+            transform: scale(1.2);
+            /* Enlarge the icon when hovered */
+        }
+
+        .footer-subscribe .subscribe-form {
+            display: flex;
+            gap: 10px;
+        }
+
+        .subscribe-form input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .subscribe-form button {
+            background-color: #ad8b3a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .subscribe-form button:hover {
+            background-color: #45443F;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            color: #ad8b3a;
+        }
+
+        .footer-container>div,
+        .footer-bottom {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-about,
+            .footer-links,
+            .footer-contact,
+            .footer-subscribe {
+                min-width: 100%;
+            }
+
+            .social-icons a {
+                margin: 5px;
+            }
+        }

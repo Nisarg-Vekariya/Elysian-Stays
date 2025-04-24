@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #ad8b3a;
+    --secondary-color: #45443F;
+    --accent-light: #ffffff;
+    --accent-dark: #000000;
+    --bg-light: #f8f9fa;
+}
+
+.hotel-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.btn-theme {
+    background-color: var(--primary-color);
+    color: var(--accent-light);
+    transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+
+.hotel-table-cell {
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.hotel-table tbody tr {
+    animation: fadeIn 0.5s ease-in-out;
+    transition: background-color 0.3s ease;
+}
+
+.hotel-table tbody tr:nth-child(even) {
+    background-color: rgba(173, 139, 58, 0.05);
+}
+
+.hotel-table tbody tr:hover {
+    background-color: rgba(173, 139, 58, 0.1);
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: var(--accent-light);
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+@media (max-width: 768px) {
+    .hotel-table {
+        font-size: 0.9rem;
+    }
+
+    .hotel-table-header, .hotel-table-cell {
+        padding: 0.5rem;
+    }
+
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

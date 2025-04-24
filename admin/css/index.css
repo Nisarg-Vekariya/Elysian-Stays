@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #ad8b3a;
+    --secondary-color: #45443F;
+    --accent-light: #ffffff;
+    --accent-dark: #000000;
+    --bg-light: #f9f9f9;
+    --bg-dark: #f3f4f6;
+}
+
+body {
+    background-color: var(--bg-dark);
+    font-family: 'Arial', sans-serif;
+    padding-top: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.card-body {
+    background-color: var(--bg-light);
+    color: var(--secondary-color);
+}
+
+.card-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.list-group-item {
+    background-color: var(--bg-light);
+    border: none;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-light);
+    transform: translateX(10px);
+}
+
+.chart-placeholder {
+    height: 200px;
+    background-color: var(--bg-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+
+/* Select and Dropdown Styling */
+select, .form-select {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    background-color: var(--accent-light);
+    color: var(--secondary-color);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ad8b3a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 35px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(173, 139, 58, 0.25);
+    outline: none;
+}
+
+select:hover, .form-select:hover {
+    border-color: var(--primary-color);
+}
+
+select option, .form-select option {
+    background-color: var(--accent-light);
+    color: var(--secondary-color);
+    padding: 8px;
+}
+
+select option:hover, .form-select option:hover,
+select option:checked, .form-select option:checked {
+    background-color: rgba(173, 139, 58, 0.1);
+    color: var(--primary-color);
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(173, 139, 58, 0.1);
+    color: var(--primary-color);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--primary-color);
+    color: var(--accent-light);
+}
+
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 2rem;
+    }
+}
+textarea:focus,
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="datetime"]:focus,
+        input[type="datetime-local"]:focus,
+        input[type="date"]:focus,
+        input[type="month"]:focus,
+        input[type="time"]:focus,
+        input[type="week"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="color"]:focus,
+        .uneditable-input:focus {
+            border-color: rgba(173, 139, 58, 0.8);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(173, 139, 58, 0.6);
+            outline: 0 none;
+        }
+
+/* Pagination Styling */
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+.pagination .page-item .page-link {
+    color: var(--secondary-color);
+    background-color: var(--accent-light);
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #ad8b3a;
+    border-color: #ad8b3a;
+    color: var(--accent-light);
+}
+
+.pagination .page-item .page-link:hover {
+    color: #ad8b3a;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: var(--accent-light);
+    border-color: #dee2e6;
+}
+
+.pagination .page-item:first-child .page-link {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.pagination .page-item:last-child .page-link {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
